@@ -1,7 +1,7 @@
-# DoggoSocial
+# Dogs
 
 ## Descrição do Projeto
-DoggoSocial é uma rede social dedicada aos amantes de cachorros. Compartilhe fotos, vídeos e histórias do seu melhor amigo peludo, encontre outros donos de cachorros e interaja em uma comunidade vibrante de apaixonados por cães.
+Dogs é uma rede social dedicada aos amantes de cachorros. Compartilhe fotos, momentos e histórias do seu melhor amigo peludo, encontre outros donos de cachorros e interaja em uma comunidade vibrante de apaixonados por cães.
 
 ## Instalação das Dependências
 Para instalar as dependências do projeto, você precisará ter o Node.js e o npm instalados em sua máquina. Em seguida, siga estas etapas:
