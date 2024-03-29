@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { type_second } from "../functions/fonts";
+import type { Metadata } from 'next';
+import './globals.css';
+import { type_second } from '../functions/fonts';
+import Header from '@/components/header';
 
 export const metadata: Metadata = {
-  title: "Dogs Next",
-  description: "Uma rede social animal.",
+  title: 'Dogs Next',
+  description: 'Uma rede social animal.',
 };
 
 export default function RootLayout({
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={type_second.variable}>{children}</body>
+      <body className={type_second.variable}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
