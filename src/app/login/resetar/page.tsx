@@ -1,3 +1,4 @@
+import LoginResetarForm from "@/components/login/login-resetar-form";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,10 +6,19 @@ export const metadata: Metadata = {
   description: "Resete a sua senha no site Dogs",
 }
 
-export default function ResetarPage() {
+type ResetarSearchParams = {
+  searchParams: {
+    key: string;
+    login: string;
+  }
+}
+
+export default function ResetarPage({  searchParams  }: ResetarSearchParams) {
+  console.log(searchParams);
   return (
-    <main>
-      <h1>Resetar</h1>
-    </main>
+    <div className="animeLeft">
+      <h1 className="title">Redefina sua senha</h1>
+      <LoginResetarForm keyToken={searchParams.key} login={searchParams.login} />
+    </div>
   );
 }
