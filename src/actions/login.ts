@@ -8,6 +8,8 @@ export default async function login(state: {}, formdata: FormData) {
   const username = formdata.get('username') as string | null;
   const password = formdata.get('password') as string | null;
 
+  console.log(password);
+
   try {
     if (!username || !password) throw new Error('Preencha os dados.');
 
